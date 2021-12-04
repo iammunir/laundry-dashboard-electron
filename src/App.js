@@ -4,18 +4,16 @@ import Container from '@material-ui/core/Container';
 
 import './App.css';
 import Login from './components/Login';
-import Cashier from './components/Cashier';
-import FormBio from './components/FormBio';
+import Dashboard from './components/Dashboard';
 
 function App() {
 
   return (
     <div>
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Switch>
           <Route path="/" component={Login} exact />
-          <Route path="/cashier" component={Cashier} />
-          <Route path="/bio-form" component={FormBio} />
+          <Route path="/dashboard" component={Dashboard} />
         </Switch>
       </Container>
     </div>
